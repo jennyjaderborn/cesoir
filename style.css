@@ -1,0 +1,190 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image: url('images/brickwall.jpg');
+    background-attachment: fixed; /*håller bakgrunden stilla, går ej att scrolla*/
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+#header {
+    background-image:url(images/woodwall.jpg);
+    height: 400px;
+}
+
+#menyrad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#meny {
+    margin-top: 20px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.menyval {
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+#logga {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-family: "Permanent Marker";
+    font-size: 34px;       
+}
+a {
+    text-decoration: none;
+}
+
+#ren {
+    max-width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text, .image {
+    height: 350px;
+}
+
+.text {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+}
+hr {
+    background-color: #DB1C75;
+    width: 50px;
+    height: 5px;
+    border: none;
+}
+
+h1 {
+    font-family: helvetica; 
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+p {
+    margin: 30px;
+}
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: purple;*/
+    flex: 2;
+}
+
+#image1 {
+    background-image: url('images/asparagus.jpeg');
+}
+
+#image2 {
+    background-image: url('images/bartender.jpeg');
+}
+
+#image3 {
+    background-image: url('images/food.jpeg');
+}
+
+#image4 {
+    background-image: url('images/egg.jpeg');
+    height: 500px;
+}
+
+#footer {
+    max-width: 1000px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#rad1 {
+    max-width: 500px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: helvetica;
+    margin-bottom: 60px;
+}
+
+#rad2 {
+    height: 400px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+#logga2 {
+    font-family: "Permanent Marker";
+    font-size: 34px;;
+}
+
+#länkar {
+    font-size: 38px;
+}
+
+i {
+    padding: 0px 10px;
+    color: #DB1C75;
+}
+
+
+@media all and (max-width: 700px) {
+    .text, .image {
+        flex: 100%;
+    }
+    .text {order: 1;}
+    .image {order: 2;}
+
+    #meny {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    #menyrad {
+        flex: none;
+        justify-content: none;
+    }
+
+    .menyval {
+    padding: 10px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rad1 {
+    margin: 0px;
+}
+
+#rad2 {
+    margin:0px;
+    height: 100px;
+}
+
+}
